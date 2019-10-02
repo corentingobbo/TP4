@@ -78,30 +78,5 @@ public class Multijoueur implements MultiPlayerGame {
         return gameList.get(joueur).score();
     }
     
-    public static void main(String[] args) {
-        Multijoueur m = new Multijoueur();
-        String[] players = {"Bob","Bill","Bruce","Fredo","Lestin"};
-        System.out.println(m.startNewGame(players));
-        
-        System.out.println(m.lancer(10));
-        System.out.println(m.lancer(2));
-        System.out.println(m.lancer(3));
-        System.out.println(m.lancer(5));
-        System.out.println(m.lancer(3));
-        System.out.println(m.lancer(4));
-        System.out.println(m.lancer(3));
-        System.out.println(m.lancer(2));
-        System.out.println(m.lancer(3));
-        System.out.println(m.lancer(10));
-        System.out.println(m.lancer(2));
-        System.out.println(m.lancer(2));
-        
-        for (String playerName : players)
-	System.out.printf("Player: %s, score: %d %n",
-		playerName,
-		m.scoreFor(playerName));
-
-        
-    }
     
 }
